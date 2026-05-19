@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* height: 10000px; */
+    background-color: #C3D9FA;
+}
+
+header {
+    background: linear-gradient(to right, #E3EAFA, #80B3FB);
+    color: rgb(7, 7, 72);
+}
+
+.hero {
+    background-image: url("../img/hero.png");
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    border-bottom: 1px solid black;
+}
+
+.hero h1 {
+    font-size: 75px;
+    font-style: italic;
+    font-family: serif;
+    margin-top: -10px;
+}
+
+.hero button {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 45px;
+    background-color: #AACBFA;
+    background-image: linear-gradient(to right, #95afec, #135fca);
+    background-size: 0% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-size: 100% 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    padding: 10px;
+    border-bottom: 1px solid #4790f7;
+}
+
+.navbar h2 {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar h2>span {
+    margin-left: 10px;
+}
+
+.nav-logo {
+    width: 75px;
+    height: 75px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    color: #072b57;
+}
+
+.nav-links-container {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link {
+    display: flex;
+    margin: 0px 10px;
+}
+
+
+.container {
+    margin: 30px;
+}
+
+.title {
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-shadow: 0px 30px 13px #000000b8;
+    color: #023479;
+    margin-bottom: 50px;
+}
+
+/* Cards Style  */
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+}
+
+.card {
+    /* flex-shrink: 1; */
+    width: 24%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #8ba2c5;
+    border: 1px solid rgb(27, 48, 135);
+    border-radius: 20px;
+}
+
+.img-card img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.title-card {
+    text-align: center;
+}
+
+.info-card {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.info-card p {
+    margin: 10px;
+}
+
+.card a {
+    /* width: 150px; */
+    margin: 5px auto;
+    margin-bottom: 10px;
+    font-size: 17px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 45px;
+    padding: 10px;
+    color: black;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #0156A7, #1A375F);
+    background-size: 0% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease;
+}
+
+.card a:hover {
+    background-size: 100% 100%;
+    color: white;
+}
+
+
+/* Gallery Style  */
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 50px;
+}
+
+.gallery-container img {
+    width: 23%;
+    height: 200px;
+    border-radius: 65px;
+}
+
+.gallery-container img:hover {
+    transform: translateY(-15px);
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 25px 13px rgba(0, 0, 0, 0.827);
+}
+
+
+/* phone media  */
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: 200px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero button {
+        font-size: 15px;
+    }
+
+    .navbar h2 {
+        font-size: 25px;
+    }
+
+    nav {
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        border: 1px solid black;
+        width: 100%;
+        border-radius: 45px;
+        margin: 15px auto;
+        background-color: #87B7FA;
+        box-shadow: 10px 10px 20px rgba(49, 48, 48, 0.566);
+    }
+
+    .nav-links-container {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0px;
+    }
+
+    .navbar a {
+        color: rgb(7, 7, 72);
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .gallery-container img {
+        width: 100%;
+        height: 300px;
+    }
+
+}
+
+/* tablet media  */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero {
+        height: 400px;
+    }
+
+    .card-container {
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .gallery-container img {
+        width: 30%;
+        height: 225px;
+    }
+}
