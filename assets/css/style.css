@@ -5,6 +5,8 @@ body {
     background-color: #C3D9FA;
 }
 
+/* Header Style  */
+
 header {
     background: linear-gradient(to right, #E3EAFA, #80B3FB);
     color: rgb(7, 7, 72);
@@ -46,6 +48,8 @@ header {
     background-repeat: no-repeat;
     transition: background-size 0.3s ease;
     cursor: pointer;
+    /* box-shadow: 0 0 22px #00ffd5,
+        0 0 44px #000000; */
 }
 
 .hero button:hover {
@@ -95,9 +99,11 @@ header {
     margin: 0px 10px;
 }
 
+/* Main Style  */
 
 .container {
     margin: 30px;
+
 }
 
 .title {
@@ -112,13 +118,17 @@ header {
     margin-bottom: 50px;
 }
 
+.section {
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+
 /* Cards Style  */
 
 .card-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-bottom: 1px solid black;
 }
 
 .card {
@@ -184,8 +194,6 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-    border-bottom: 1px solid black;
-    padding-bottom: 50px;
 }
 
 .gallery-img {
@@ -198,6 +206,161 @@ header {
     transform: translateY(-15px);
     transition: all 0.4s ease-in-out;
     box-shadow: 0px 25px 13px rgba(0, 0, 0, 0.827);
+    cursor: pointer;
+}
+
+/* Events Style  */
+
+.event-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.event,
+.event-style2 {
+    width: 43%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 45px 0px 0px 45px;
+}
+
+.img-event,
+.img-event-style2 {
+    width: 225px;
+    border-radius: 45px 0px 0px 45px;
+}
+
+.info-event,
+.info-event-style2 {
+    text-align: center;
+}
+
+.event-style2 {
+    border-radius: 0px 45px 45px 0px;
+    margin-top: 10px;
+    justify-self: end;
+}
+
+.img-event-style2 {
+    border-radius: 0px 45px 45px 0px;
+}
+
+/* Footer Style  */
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    border-top: 1px solid black;
+    margin-top: 70px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background: linear-gradient(to right, #065BAF, #052E61);
+    color: #dfe9f9;
+
+}
+
+.footer-f-section h2 {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: underline;
+    color: #f5f5f5;
+}
+
+.footer-s-section,
+.footer-t-section {
+    text-align: left;
+    font-weight: 600;
+}
+
+.footer-s-section h2,
+.footer-t-section h2 {
+    text-align: center;
+}
+
+.footer-container a {
+    color: #dfe9f9;
+}
+
+
+/* Services Style  */
+
+/* First Section  */
+
+.section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px auto;
+}
+
+.section1 img {
+    width: 600px;
+    margin-left: 30px;
+    border-radius: 45px;
+}
+
+.section1 img:hover{
+    cursor: pointer;
+    transform: translateY(-20px);
+    box-shadow: 0px 30px 13px rgba(0, 0, 0, 0.785);
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Second Section  */
+
+.courses-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px 30px;
+}
+
+/* Third Section  */
+
+.services-event-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 70px 20px;
+}
+
+.services-event,
+.services-event-style2 {
+    width: 43%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 45px 0px 0px 45px;
+    margin-bottom: 20px;
+}
+
+.services-img-event,
+.services-img-event-style2 {
+    width: 225px;
+    border-radius: 45px 0px 0px 45px;
+}
+
+.services-event-style2 {
+    border-radius: 0px 45px 45px 0px;
+    justify-self: end;
+}
+
+.services-img-event-style2 {
+    border-radius: 0px 45px 45px 0px;
+}
+
+
+
+
+
+/* Hide and active class  */
+.ative {
+    display: none;
 }
 
 
@@ -256,6 +419,19 @@ header {
         height: 300px;
     }
 
+    .event,
+    .event-style2 {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 0px;
+    }
+
+    .img-event,
+    .img-event-style2 {
+        width: 125px;
+        border-radius: 0px;
+    }
+
 }
 
 /* tablet media  */
@@ -277,4 +453,19 @@ header {
         width: 30%;
         height: 225px;
     }
+
+    .event,
+    .event-style2 {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .img-event,
+    .img-event-style2 {
+        width: 200px;
+    }
+
 }
+
+
+/* Animation  */
