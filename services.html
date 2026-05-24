@@ -48,6 +48,24 @@
 
     <main class="container">
 
+        <!-- Alert -->
+        <div class="alert-container">
+            <div class="alert active" id="registerAlert">
+                <h4>Are you sure you want to register?</h4>
+                <div class="alert-btn">
+                    <button id="alertYesBtn">Yes</button>
+                    <button id="alertNoBtn">No</button>
+                </div>
+            </div>
+
+            <div class="alert active" id="conf">
+                <h4>you registerd</h4>
+                <button id="alertOkBtn">OK</button>
+            </div>
+        </div>
+
+<!-- first section   -->
+
         <div class="section1">
 
             <div class="" id="coursesShow" onclick="coursesShow()">
@@ -62,21 +80,102 @@
 
         </div>
 
+        <!-- second section   -->
         <div class="section2 active" id="courses">
 
             <div class="courses-container">
 
                 <div class="card">
                     <div class="img-card">
-                        <img src="assets/img/hero.png" alt="">
+                        <img src="assets/img/react.png" alt="">
                     </div>
                     <div class="title-card">
-                        <h2>Course Name</h2>
+                        <h2>React</h2>
+                    </div>
+                    <div class="info-card">
+                        <h3>Information: </h3>
+                        <p>Time : 45hr</p>
+                        <p>Languges : JavaScript-framework</p>
+                        <p>Start: may/23/2026</p>
+                    </div>
+                    <button onclick="courseRegister()">Course Registration</button>
+                </div>
+
+                <div class="card">
+                    <div class="img-card">
+                        <img src="assets/img/java.png" alt="">
+                    </div>
+                    <div class="title-card">
+                        <h2>Java</h2>
+                    </div>
+                    <div class="info-card">
+                        <h3>Information: </h3>
+                        <p>Time : 30 hr</p>
+                        <p>Languges : java</p>
+                        <p>Start: may/10/2026</p>
+                    </div>
+                    <button onclick="courseRegister()">Course Registration</button>
+                </div>
+
+                <div class="card">
+                    <div class="img-card">
+                        <img src="assets/img/C++.png" alt="">
+                    </div>
+                    <div class="title-card">
+                        <h2>C++</h2>
                     </div>
                     <div class="info-card">
                         <h3>Information: </h3>
                         <p>Time : 30hr</p>
-                        <p>Languges : JS</p>
+                        <p>Languges : C++</p>
+                        <p>Start: jun/13/2026</p>
+                    </div>
+                    <button onclick="courseRegister()">Course Registration</button>
+                </div>
+
+                <div class="card">
+                    <div class="img-card">
+                        <img src="assets/img/backend.png" alt="">
+                    </div>
+                    <div class="title-card">
+                        <h2>Backend Development</h2>
+                    </div>
+                    <div class="info-card">
+                        <h3>Information: </h3>
+                        <p>Time : 30hr</p>
+                        <p>Languges : PHP, MySQL, Laravel </p>
+                        <p>Start: jun/3/2026</p>
+                    </div>
+                    <button onclick="courseRegister()">Course Registration</button>
+                </div>
+
+                <div class="card">
+                    <div class="img-card">
+                        <img src="assets/img/C.png" alt="">
+                    </div>
+                    <div class="title-card">
+                        <h2>C#</h2>
+                    </div>
+                    <div class="info-card">
+                        <h3>Information: </h3>
+                        <p>Time : 25hr</p>
+                        <p>Languges : C#</p>
+                        <p>Start: may/14/2026</p>
+                    </div>
+                    <button onclick="courseRegister()">Course Registration</button>
+                </div>
+
+                <div class="card">
+                    <div class="img-card">
+                        <img src="assets/img/frontend.png" alt="">
+                    </div>
+                    <div class="title-card">
+                        <h2>Frontend Development</h2>
+                    </div>
+                    <div class="info-card">
+                        <h3>Information: </h3>
+                        <p>Time : 40hr</p>
+                        <p>Languges : HTML, CSS, JavaScript, Bootstrap</p>
                         <p>Start: april/23/2026</p>
                     </div>
                     <button onclick="courseRegister()">Course Registration</button>
@@ -84,112 +183,16 @@
 
                 <div class="card">
                     <div class="img-card">
-                        <img src="assets/img/hero.png" alt="">
+                        <img src="assets/img/nodejs.png" alt="">
                     </div>
                     <div class="title-card">
-                        <h2>Course Name</h2>
+                        <h2>Node.js</h2>
                     </div>
                     <div class="info-card">
                         <h3>Information: </h3>
-                        <p>Time : 30hr</p>
-                        <p>Languges : JS</p>
-                        <p>Start: april/23/2026</p>
-                    </div>
-                    <button onclick="courseRegister()">Course Registration</button>
-                </div>
-
-                <div class="card">
-                    <div class="img-card">
-                        <img src="assets/img/hero.png" alt="">
-                    </div>
-                    <div class="title-card">
-                        <h2>Course Name</h2>
-                    </div>
-                    <div class="info-card">
-                        <h3>Information: </h3>
-                        <p>Time : 30hr</p>
-                        <p>Languges : JS</p>
-                        <p>Start: april/23/2026</p>
-                    </div>
-                    <button onclick="courseRegister()">Course Registration</button>
-                </div>
-
-                <div class="card">
-                    <div class="img-card">
-                        <img src="assets/img/hero.png" alt="">
-                    </div>
-                    <div class="title-card">
-                        <h2>Course Name</h2>
-                    </div>
-                    <div class="info-card">
-                        <h3>Information: </h3>
-                        <p>Time : 30hr</p>
-                        <p>Languges : JS</p>
-                        <p>Start: april/23/2026</p>
-                    </div>
-                    <button onclick="courseRegister()">Course Registration</button>
-                </div>
-
-                <div class="card">
-                    <div class="img-card">
-                        <img src="assets/img/hero.png" alt="">
-                    </div>
-                    <div class="title-card">
-                        <h2>Course Name</h2>
-                    </div>
-                    <div class="info-card">
-                        <h3>Information: </h3>
-                        <p>Time : 30hr</p>
-                        <p>Languges : JS</p>
-                        <p>Start: april/23/2026</p>
-                    </div>
-                    <button onclick="courseRegister()">Course Registration</button>
-                </div>
-
-                <div class="card">
-                    <div class="img-card">
-                        <img src="assets/img/hero.png" alt="">
-                    </div>
-                    <div class="title-card">
-                        <h2>Course Name</h2>
-                    </div>
-                    <div class="info-card">
-                        <h3>Information: </h3>
-                        <p>Time : 30hr</p>
-                        <p>Languges : JS</p>
-                        <p>Start: april/23/2026</p>
-                    </div>
-                    <button onclick="courseRegister()">Course Registration</button>
-                </div>
-
-                <div class="card">
-                    <div class="img-card">
-                        <img src="assets/img/hero.png" alt="">
-                    </div>
-                    <div class="title-card">
-                        <h2>Course Name</h2>
-                    </div>
-                    <div class="info-card">
-                        <h3>Information: </h3>
-                        <p>Time : 30hr</p>
-                        <p>Languges : JS</p>
-                        <p>Start: april/23/2026</p>
-                    </div>
-                    <button onclick="courseRegister()">Course Registration</button>
-                </div>
-
-                <div class="card">
-                    <div class="img-card">
-                        <img src="assets/img/hero.png" alt="">
-                    </div>
-                    <div class="title-card">
-                        <h2>Course Name</h2>
-                    </div>
-                    <div class="info-card">
-                        <h3>Information: </h3>
-                        <p>Time : 30hr</p>
-                        <p>Languges : JS</p>
-                        <p>Start: april/23/2026</p>
+                        <p>Time : 50hr</p>
+                        <p>Languges : Nodejs</p>
+                        <p>Start: jun/25/2026</p>
                     </div>
                     <button onclick="courseRegister()">Course Registration</button>
                 </div>
@@ -198,18 +201,19 @@
 
         </div>
 
+        <!-- third section   -->
         <div class="section3 active" id="events">
 
             <div class="services-event-container">
 
                 <div class="event">
 
-                    <img src="assets/img/hero.png" alt="" class="img-event">
+                    <img src="assets/img/ai.png" alt="" class="img-event">
 
                     <div class="info-event">
-                        <h2>Title:</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dolores!</p>
-                        <p>Date</p>
+                        <h2>Ai Bootcamp</h2>
+                        <p>you will learn the basics of artificial intelligence and machine learning.</p>
+                        <p>may/20/2026</p>
                     </div>
 
                 </div>
@@ -217,23 +221,23 @@
                 <div class="event-style2">
 
                     <div class="info-event-style2">
-                        <h2>Title:</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dolores!</p>
-                        <p>Date</p>
+                        <h2>Network Security</h2>
+                        <p>you will learn the basics of network security and how to protect your systems from cyber threats.</p>
+                        <p>jun/15/2026</p>
                     </div>
 
-                    <img src="assets/img/hero.png" alt="" class="img-event-style2">
+                    <img src="assets/img/network.png" alt="" class="img-event-style2">
 
                 </div>
 
                 <div class="event">
 
-                    <img src="assets/img/hero.png" alt="" class="img-event">
+                    <img src="assets/img/linux.png" alt="" class="img-event">
 
                     <div class="info-event">
-                        <h2>Title:</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dolores!</p>
-                        <p>Date</p>
+                        <h2>Linux Administration</h2>
+                        <p>you will learn the basics of Linux administration and how to manage Linux systems.</p>
+                        <p>jul/10/2026</p>
                     </div>
 
                 </div>
@@ -241,36 +245,24 @@
                 <div class="event-style2">
 
                     <div class="info-event-style2">
-                        <h2>Title:</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dolores!</p>
-                        <p>Date</p>
+                        <h2>Cyber Security</h2>
+                        <p>you will learn the basics of cyber security and how to protect your systems from cyber threats.</p>
+                        <p>aug/20/2026</p>
                     </div>
 
-                    <img src="assets/img/hero.png" alt="" class="img-event-style2">
+                    <img src="assets/img/cyber.png" alt="" class="img-event-style2">
 
                 </div>
 
                 <div class="event">
 
-                    <img src="assets/img/hero.png" alt="" class="img-event">
+                    <img src="assets/img/ui.png" alt="" class="img-event">
 
                     <div class="info-event">
-                        <h2>Title:</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dolores!</p>
-                        <p>Date</p>
+                        <h2>UI/UX Design</h2>
+                        <p>you will learn the basics of user interface and user experience design.</p>
+                        <p>sep/15/2026</p>
                     </div>
-
-                </div>
-
-                <div class="event-style2">
-
-                    <div class="info-event-style2">
-                        <h2>Title:</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dolores!</p>
-                        <p>Date</p>
-                    </div>
-
-                    <img src="assets/img/hero.png" alt="" class="img-event-style2">
 
                 </div>
 

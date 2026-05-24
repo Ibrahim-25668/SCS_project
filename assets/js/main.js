@@ -50,9 +50,33 @@ scrollBtn.onclick = function () {
 
 // Register alert 
 
+let registerAlert = document.getElementById("registerAlert")
+let alertYesBtn = document.getElementById("alertYesBtn")
+let alertNoBtn = document.getElementById("alertNoBtn")
+let conf = document.getElementById("conf")
+let alertOkBtn = document.getElementById("alertOkBtn")
+
 function courseRegister() {
-    alert("You have successfully registered for this course")
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+    registerAlert.classList.remove("active")
 }
+
+alertNoBtn.onclick = ()=>{
+    registerAlert.classList.add("active")
+}
+
+alertYesBtn.onclick = ()=>{
+    conf.classList.remove("active")
+    registerAlert.classList.add("active")
+}
+
+alertOkBtn.onclick = ()=>{
+    conf.classList.add("active")
+}
+
 
 // Show Pass 
 let pass = document.getElementById("password")
