@@ -47,3 +47,23 @@ scrollBtn.onclick = function () {
         behavior: "smooth"
     })
 }
+
+// Register alert 
+
+function courseRegister() {
+    alert("You have successfully registered for this course")
+}
+
+// Show Pass 
+let pass = document.getElementById("password")
+let eyeShow = document.getElementById("eyeShow")
+
+function showPass(){
+    if(pass.type === "password"){
+        pass.type = "text"
+        eyeShow.innerHTML = '<i class="fas fa-eye-slash"></i>'
+    }else {
+        pass.type = "password"
+        eyeShow.innerHTML = '<i class="fa-solid fa-eye"></i>'
+    }
+}

@@ -37,7 +37,7 @@ header {
     margin-top: -10px;
 }
 
-.hero button {
+.hero .login-btn {
     font-size: 20px;
     padding: 10px;
     border-radius: 45px;
@@ -48,11 +48,12 @@ header {
     background-repeat: no-repeat;
     transition: background-size 0.3s ease;
     cursor: pointer;
-    /* box-shadow: 0 0 22px #00ffd5,
-        0 0 44px #000000; */
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
 }
 
-.hero button:hover {
+.hero .login-btn:hover {
     background-size: 100% 100%;
 }
 
@@ -99,6 +100,7 @@ header {
     margin: 0px 10px;
 }
 
+/* ================================================================= */
 
 /* Footer Style  */
 
@@ -139,6 +141,7 @@ header {
     color: #dfe9f9;
 }
 
+/* ================================================================= */
 
 /* Main Style  */
 
@@ -162,6 +165,10 @@ header {
     padding-bottom: 50px;
     border-bottom: 1px solid black;
 }
+
+/* ================================================================= */
+
+/* Home Style  */
 
 /* Cards Style  */
 
@@ -203,7 +210,7 @@ header {
     margin: 10px;
 }
 
-.card a {
+.card button {
     /* width: 150px; */
     margin: 5px auto;
     margin-bottom: 10px;
@@ -219,9 +226,10 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     transition: background-size 0.4s ease;
+    cursor: pointer;
 }
 
-.card a:hover {
+.card button:hover {
     background-size: 100% 100%;
     color: white;
 }
@@ -287,6 +295,8 @@ header {
     cursor: pointer;
 }
 
+/* ================================================================= */
+
 /* Services Style  */
 
 /* First Section  */
@@ -300,8 +310,8 @@ header {
 
 .course-img,
 .event-img {
-    width: 600px;
-    margin-left: 30px;
+    width: 500px;
+    margin: 10px;
     border-radius: 45px;
 }
 
@@ -351,6 +361,221 @@ header {
     flex-wrap: wrap;
 }
 
+/* ================================================================= */
+
+/* About Style  */
+
+.about-box {
+    border: 1px solid black;
+    margin: 30px auto;
+    padding: 5px 20px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px black;
+    color: #002346;
+}
+
+.sec-title {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: #02295A;
+    font-style: oblique;
+    text-align: center;
+}
+
+.des {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 24px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #052E62;
+}
+
+.team span {
+    font-size: 20px;
+    font-family: serif;
+    font-weight: 650;
+    color: #072B57;
+}
+
+/* ================================================================= */
+
+/* Contact Style  */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.contact-form {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.603);
+    background-color: #0A71D8;
+}
+
+.contact-form input,
+textarea {
+    width: 300px;
+    height: 30px;
+    border-radius: 45px;
+    font-size: 17px;
+}
+
+.form-item {
+    margin: 10px auto;
+}
+
+.form-item label {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.form-btn {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-btn button {
+    font-size: 25px;
+    background-color: rgba(11, 152, 11, 0.733);
+    color: white;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+.form-btn button:nth-child(2) {
+    background-color: rgba(255, 0, 0, 0.784);
+}
+
+/* ================================================================= */
+
+/* Login Style  */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.login-form {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    margin: 30px auto;
+    background-color: #7D9AC5;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.login-form-item {
+    position: relative;
+    width: 300px;
+    margin: 10px auto;
+}
+
+.login-form-item input {
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 16px;
+    border: 1px solid #068fff;
+    outline: none;
+    border-radius: 4px;
+}
+
+.login-form-item label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    transition: 0.4s ease;
+    pointer-events: none;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.login-form-item input:focus+label,
+.login-form-item input:valid+label {
+    background-color: #7D9AC5;
+    top: -1px;
+    font-size: 14px;
+}
+
+.form-gen{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-lable-gen{
+    margin-right: 10px;
+}
+
+.form-gen label{
+    font-size: 20px;
+}
+
+.login-form a{
+    color: #000;
+    font-size: 25px;
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-family: serif;
+    border-radius: 45px;
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: #9EC3FA;
+    background-image: linear-gradient(to right, #9EC3FA , #0368ff);
+    background-size: 0 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-in-out;
+}
+
+.login-form a:hover{
+    background-size: 100% 100%;
+}
+
+#eyeShow{
+    position: absolute;
+    top: 30%;
+    right: 1px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* ================================================================= */
 
 /* Hide and active class  */
 .active {
@@ -358,9 +583,10 @@ header {
 }
 
 /* Scroll To Top Btn  */
-#scrollBtn{
+#scrollBtn {
     width: 50px;
     height: 50px;
+    font-size: 30px;
     background-color: #0a71d8;
     border: 1px solid black;
     border-radius: 50%;
@@ -370,6 +596,10 @@ header {
     cursor: pointer;
     display: none;
 }
+
+/* ================================================================= */
+
+/* Responsive  */
 
 /* phone media  */
 
@@ -383,7 +613,7 @@ header {
         font-size: 25px;
     }
 
-    .hero button {
+    .hero .login-btn {
         font-size: 15px;
     }
 
@@ -411,6 +641,10 @@ header {
 
     .navbar a {
         color: rgb(7, 7, 72);
+    }
+
+    .footer-container {
+        padding-bottom: 70px;
     }
 
     .title {
@@ -442,9 +676,23 @@ header {
     .course-img,
     .event-img {
         width: 300px;
-        margin: 30px auto;
+        margin: 10px;
+    }
+
+    .team {
+        font-size: 20px;
+    }
+
+    .team span {
+        font-size: 15px;
+    }
+
+    #scrollBtn {
+        bottom: 75px;
     }
 }
+
+/* ================================================================= */
 
 /* tablet media  */
 
@@ -483,6 +731,19 @@ header {
         margin: 30px auto;
     }
 
+    .services-event-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-container {
+        margin: 200px auto;
+    }
+
+    #scrollBtn {
+        width: 75px;
+        height: 75px;
+    }
 }
 
 
