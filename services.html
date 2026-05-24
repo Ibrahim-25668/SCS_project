@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/logo.png">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 
     <title>SCS</title>
 </head>
@@ -44,21 +46,23 @@
 
     <!-- Main Start -->
 
-    <main>
+    <main class="container">
 
         <div class="section1">
 
-            <div class="img1 img-show">
-                <img src="assets/img/hero.png" alt="Courses">
+            <div class="" id="coursesShow" onclick="coursesShow()">
+                <img src="assets/img/hero.png" alt="Courses" class="event-img">
             </div>
 
-            <div class="img2 img-show">
-                <img src="assets/img/hero.png" alt="Events">
+            <div class="" id="eventsShow" onclick="eventsShow()">
+                <img src="assets/img/hero.png" alt="Events" class="event-img">
             </div>
+
+            <button class="active" id="goBackBtn" onclick="goBack()"> Go Back </button>
 
         </div>
 
-        <div class="section2">
+        <div class="section2 active" id="courses">
 
             <div class="courses-container">
 
@@ -194,37 +198,13 @@
 
         </div>
 
-        <div class="section3">
+        <div class="section3 active" id="events">
 
             <div class="services-event-container">
 
-                <div class="services-event">
+                <div class="event">
 
-                    <img src="assets/img/hero.png" alt="" class="services-img-event">
-
-                    <div class="info-event">
-                        <h2>Title:</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dolores!</p>
-                        <p>Date</p>
-                    </div>
-
-                </div>
-
-                <div class="services-event-style2">
-
-                    <div class="info-event-style2">
-                        <h2>Title:</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dolores!</p>
-                        <p>Date</p>
-                    </div>
-
-                    <img src="assets/img/hero.png" alt="" class="services-img-event-style2">
-
-                </div>
-
-                <div class="services-event">
-
-                    <img src="assets/img/hero.png" alt="" class="services-img-event">
+                    <img src="assets/img/hero.png" alt="" class="img-event">
 
                     <div class="info-event">
                         <h2>Title:</h2>
@@ -234,7 +214,7 @@
 
                 </div>
 
-                <div class="services-event-style2">
+                <div class="event-style2">
 
                     <div class="info-event-style2">
                         <h2>Title:</h2>
@@ -242,13 +222,13 @@
                         <p>Date</p>
                     </div>
 
-                    <img src="assets/img/hero.png" alt="" class="services-img-event-style2">
+                    <img src="assets/img/hero.png" alt="" class="img-event-style2">
 
                 </div>
 
-                <div class="services-event">
+                <div class="event">
 
-                    <img src="assets/img/hero.png" alt="" class="services-img-event">
+                    <img src="assets/img/hero.png" alt="" class="img-event">
 
                     <div class="info-event">
                         <h2>Title:</h2>
@@ -258,7 +238,7 @@
 
                 </div>
 
-                <div class="services-event-style2">
+                <div class="event-style2">
 
                     <div class="info-event-style2">
                         <h2>Title:</h2>
@@ -266,7 +246,31 @@
                         <p>Date</p>
                     </div>
 
-                    <img src="assets/img/hero.png" alt="" class="services-img-event-style2">
+                    <img src="assets/img/hero.png" alt="" class="img-event-style2">
+
+                </div>
+
+                <div class="event">
+
+                    <img src="assets/img/hero.png" alt="" class="img-event">
+
+                    <div class="info-event">
+                        <h2>Title:</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dolores!</p>
+                        <p>Date</p>
+                    </div>
+
+                </div>
+
+                <div class="event-style2">
+
+                    <div class="info-event-style2">
+                        <h2>Title:</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dolores!</p>
+                        <p>Date</p>
+                    </div>
+
+                    <img src="assets/img/hero.png" alt="" class="img-event-style2">
 
                 </div>
 
@@ -320,6 +324,9 @@
     </footer>
 
     <!-- Footer End -->
+
+    <!-- Scroll To Top Btn  -->
+    <button id="scrollBtn"> <i class="fa-solid fa-arrow-up"></i></button>
 
     <script src="assets/js/main.js"></script>
 </body>
