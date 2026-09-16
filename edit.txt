@@ -1,0 +1,4 @@
+add alert in github 
+fix show and hidd pass in local
+add photo for events in services
+check the local web and push it to github after remove old one

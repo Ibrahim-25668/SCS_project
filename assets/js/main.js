@@ -48,6 +48,21 @@ scrollBtn.onclick = function () {
     })
 }
 
+// Show Pass 
+let pass = document.getElementById("password")
+let eyeShow = document.getElementById("eyeShow")
+
+function showPass(){
+    if(pass.type === "password"){
+        pass.type = "text"
+        eyeShow.innerHTML = '<i class="fas fa-eye-slash"></i>'
+    }else {
+        pass.type = "password"
+        eyeShow.innerHTML = '<i class="fa-solid fa-eye"></i>'
+    }
+}
+
+
 // Register alert 
 
 let registerAlert = document.getElementById("registerAlert")
@@ -75,19 +90,4 @@ alertYesBtn.onclick = ()=>{
 
 alertOkBtn.onclick = ()=>{
     conf.classList.add("active")
-}
-
-
-// Show Pass 
-let pass = document.getElementById("password")
-let eyeShow = document.getElementById("eyeShow")
-
-function showPass(){
-    if(pass.type === "password"){
-        pass.type = "text"
-        eyeShow.innerHTML = '<i class="fas fa-eye-slash"></i>'
-    }else {
-        pass.type = "password"
-        eyeShow.innerHTML = '<i class="fa-solid fa-eye"></i>'
-    }
 }
